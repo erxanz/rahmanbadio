@@ -19,7 +19,7 @@
     }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 768px) {
     /* Burger */
     .burger {
         display: block;
@@ -117,7 +117,7 @@
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 480px) {
     /* Titles */
     .section-title {
         font-size: 1.2rem;

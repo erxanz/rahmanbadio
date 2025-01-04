@@ -9,11 +9,11 @@
 
     --primaryBackgroundColor: #fafafa;
     --secondaryBackgroundColor: #f9f9f9;
-    --thirdBackgroundColor: #e2edf8;
+    --thirdBackgroundColor: #8f8f8f;
 
-    --primaryIconColor: #63b1d8;
-    --secondaryIconColor: #a0e9ff;
-    --primaryIconColorHover: #00a9ff;
+    --primaryIconColor: #999999;
+    --secondaryIconColor: #3f3f3f;
+    --primaryIconColorHover: #797979;
 
     --sectionPadding: 6rem 0;
 
@@ -41,7 +41,8 @@ strong {
 }
 
 p {
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
+    /* 16px */
     line-height: 1.9rem;
 }
 
@@ -56,6 +57,10 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.text-putih {
+    color: white;
 }
 
 .main-container {
@@ -99,9 +104,18 @@ a {
     left: 0;
     top: 50%;
 }
+
 /* END GLOBAL */
 
 /* START NAVBAR */
+header {
+    width: 100%;
+    z-index: 999;
+    background-color: var(--primaryBackgroundColor);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -164,9 +178,25 @@ a {
     top: 33px;
     right: 35px;
 }
+
 /* END NAVBAR */
 
 /* START HOME */
+/* Home Section */
+.home .home-right img {
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4b4b4b;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.home .home-right img:hover {
+    opacity: 1;
+}
+
 #home {
     height: 720px;
     display: grid;
@@ -192,6 +222,7 @@ a {
     display: flex;
     justify-content: center;
 }
+
 /* END HOME */
 
 /* START SERVICES */
@@ -231,6 +262,7 @@ a {
 .service-icon svg {
     fill: var(--primaryIconColor);
 }
+
 /* END SERVICES */
 
 /* START PORTOFOLIOS */
@@ -290,6 +322,7 @@ a {
     padding: 0.4rem 1rem;
     color: var(--secondaryTextColor);
 }
+
 /* END PORTOFOLIOS */
 
 /* START SKILLS & EDUCATION */
@@ -299,10 +332,9 @@ a {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(350px, 1fr)
-    ); /* Koreksi typo dari "350x" menjadi "350px" */
+    grid-template-columns: repeat(auto-fit,
+            minmax(350px, 1fr));
+    /* Koreksi typo dari "350x" menjadi "350px" */
     gap: 3rem;
 }
 
@@ -351,6 +383,7 @@ a {
     line-height: 2rem;
     padding: 0 1rem;
 }
+
 /* END SKILLS & EDUCATION */
 
 /* START CONTACT */
@@ -391,7 +424,7 @@ a {
 .btn-submit {
     width: 100%;
     padding: 0.75rem 1.3rem;
-    background-color: var(--primaryIconColor);
+    background-color: var(--thirdBackgroundColor);
     color: #ffeeee;
     border: none;
     border-radius: 3px;
@@ -426,12 +459,13 @@ a {
 .contact-item-detail h4 {
     margin-bottom: 0.5rem;
 }
+
 /* END CONTACT */
 
 /* START FOOTER */
 footer {
     padding: 4rem 0;
-    background: var(--thirdBackgroundColor);
+    background: #141414;
     text-align: center;
 }
 
@@ -450,4 +484,5 @@ footer {
 .footer-icons svg:hover {
     fill: #000;
 }
+
 /* END FOOTER */
