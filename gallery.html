@@ -3,19 +3,19 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galeri Portofolio</title>
+    <title>Contact</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/gallery.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
-    <!-- AOS2 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Awesome 6 cdn -->
+    <!-- awesome 6 cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -32,8 +32,8 @@
                         <li><a href="index.html#services"><i class="fas fa-cogs"></i> Services</a></li>
                         <li><a href="index.html#portofolios"><i class="fas fa-briefcase"></i> Portofolio</a></li>
                         <li><a href="index.html#skills"><i class="fas fa-chart-bar"></i> Skills</a></li>
-                        <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
-                        <li><a href="contact.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="gallery.html#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
                     </ul>
                 </nav>
                 <div class="burger">
@@ -44,37 +44,50 @@
             </div>
         </div>
     </header>
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-form-section">
+                <h2>Hubungi Saya</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis minima consectetur totam
+                    molestias nulla, provident quod ea, iure iusto culpa! Eveniet numquam cumque cupiditate.</p>
+                <form id="contactForm" action="https://formspree.io/f/xrbzzwkb" method="post">
+                    <div class="form-group">
+                        <label for="name">Nama*</label>
+                        <input type="text" name="name" id="name" placeholder="Masukkan Nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" placeholder="Masukkan Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan*</label>
+                        <textarea name="message" id="message" rows="5" placeholder="Masukkan Pesan" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Kirim Pesan</button>
+                    </div>
+                </form>
+            </div>
 
-    <div class="gallery-container">
-        <h2>Galeri Portofolio</h2>
-        <p>Koleksi beberapa project terbaik saya.</p>
-        <div class="gallery">
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/10/300/200" alt="Gambar 1">
-            </div>
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/20/300/200" alt="Gambar 2">
-            </div>
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/30/300/200" alt="Gambar 3">
-            </div>
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/40/300/200" alt="Gambar 4">
-            </div>
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/50/300/200" alt="Gambar 5">
-            </div>
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/60/300/200" alt="Gambar 6">
-            </div>
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/70/300/200" alt="Gambar 7">
-            </div>
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/80/300/200" alt="Gambar 8">
-            </div>
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/90/300/200" alt="Gambar 9">
-            </div>
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/100/300/200" alt="Gambar 10">
-            </div>
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/110/300/200" alt="Gambar 11">
-            </div>
-            <div class="gallery-item" draggable="true"> <img src="https://picsum.photos/id/120/300/200" alt="Gambar 12">
+            <div class="contact-info-section">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Alamat Saya</h4>
+                    <p>Bengkulu, Kota Bengkulu</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Hubungi Saya</h4>
+                    <p>+62 895 4100 70xxx</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email Saya</h4>
+                    <p>badiobkl@gmail.com</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer class="footer-section">
         <div class="footer-container">
@@ -101,50 +114,6 @@
             </p>
         </div>
     </footer>
-
-    <script>
-        const gallery = document.querySelector('.gallery');
-        const galleryItems = document.querySelectorAll('.gallery-item');
-        let draggedItem = null;
-
-        galleryItems.forEach(item => {
-            item.addEventListener('dragstart', () => {
-                draggedItem = item;
-                setTimeout(() => item.classList.add('dragging'), 0); // Delay sedikit untuk transisi
-            });
-
-            item.addEventListener('dragend', () => {
-                draggedItem = null;
-                item.classList.remove('dragging');
-            });
-
-            item.addEventListener('dragover', (e) => {
-                e.preventDefault();
-            });
-
-            item.addEventListener('dragenter', function (e) {
-                e.preventDefault();
-                this.classList.add('hovered');
-            });
-
-            item.addEventListener('dragleave', function (e) {
-                this.classList.remove('hovered');
-            });
-
-            item.addEventListener('drop', (e) => {
-                e.preventDefault();
-                if (item !== draggedItem) {
-                    let draggedItemIndex = Array.from(gallery.children).indexOf(draggedItem);
-                    let itemIndex = Array.from(gallery.children).indexOf(item);
-                    gallery.insertBefore(draggedItem, itemIndex > draggedItemIndex ? item.nextSibling : item);
-                }
-                item.classList.remove('hovered');
-            });
-        });
-    </script>
-
-    <!-- AOS 2 -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>

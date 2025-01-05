@@ -13,6 +13,9 @@
 
     <!-- awesome 6 cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -44,7 +47,7 @@
     <section id="contact">
         <div class="contact-container">
             <div class="contact-form-section">
-                <h2>Hubungi Kami</h2>
+                <h2>Hubungi Saya</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis minima consectetur totam molestias nulla, provident quod ea, iure iusto culpa! Eveniet numquam cumque cupiditate.</p>
                 <form id="contactForm" action="https://formspree.io/f/xrbzzwkb" method="post">
                     <div class="form-group">
@@ -68,27 +71,22 @@
             <div class="contact-info-section">
                 <div class="info-card">
                     <i class="fas fa-map-marker-alt"></i>
-                    <h4>Kantor Kami</h4>
+                    <h4>Alamat Saya</h4>
                     <p>Bengkulu, Kota Bengkulu</p>
                 </div>
                 <div class="info-card">
                     <i class="fas fa-phone"></i>
-                    <h4>Hubungi Kami</h4>
+                    <h4>Hubungi Saya</h4>
                     <p>+62 895 4100 70xxx</p>
                 </div>
                 <div class="info-card">
                     <i class="fas fa-envelope"></i>
-                    <h4>Email Kami</h4>
+                    <h4>Email Saya</h4>
                     <p>badiobkl@gmail.com</p>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
 
     <footer class="footer-section">
         <div class="footer-container">
@@ -125,7 +123,11 @@
             const nameInput = document.getElementById('name');
             const nameValue = nameInput.value.trim();
             if (!/^[a-zA-Z\s]+$/.test(nameValue) || nameValue === "") {
-                alert("Nama harus diisi dan hanya boleh berisi huruf dan spasi.");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Nama harus diisi dan hanya boleh berisi huruf dan spasi.'
+                });
                 nameInput.focus();
                 isValid = false;
             }
@@ -134,7 +136,11 @@
             const emailInput = document.getElementById('email');
             const emailValue = emailInput.value.trim();
             if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
-                alert("Format email tidak valid.");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Format email tidak valid.'
+                });
                 emailInput.focus();
                 isValid = false;
             }
@@ -142,7 +148,11 @@
             // Validasi Pesan (tidak boleh kosong)
             const messageInput = document.getElementById('message');
             if (messageInput.value.trim() === "") {
-                alert("Pesan tidak boleh kosong.");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Pesan tidak boleh kosong.'
+                });
                 messageInput.focus();
                 isValid = false;
             }
@@ -150,7 +160,11 @@
             if (!isValid) {
                 event.preventDefault(); // Mencegah pengiriman form jika tidak valid
             } else {
-                alert("Pesan Anda telah terkirim!"); // Pesan sukses (bisa diganti dengan tampilan yang lebih baik)
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Berhasil!',
+                    text: 'Pesan Anda telah terkirim!'
+                });
                 form.reset(); // Reset form setelah sukses
             }
         });

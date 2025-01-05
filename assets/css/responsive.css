@@ -141,7 +141,7 @@ body {
         right: 20px;
         z-index: 10;
         background-color: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     .burger div {
@@ -226,7 +226,7 @@ body {
 .burger .line-1 {
     width: 25px;
     height: 3px;
-    background: linear-gradient(to right, rgb(70, 63, 63), rgb(19, 19, 16));
+    background: linear-gradient(to right, rgb(80, 74, 74), rgb(19, 19, 16));
     margin: 5px 0;
     transition: all 0.3s ease;
 }
@@ -234,7 +234,7 @@ body {
 .burger .line-2 {
     width: 25px;
     height: 3px;
-    background: linear-gradient(to right, rgb(34, 59, 34), rgb(48, 48, 71));
+    background: linear-gradient(to right, rgb(34, 59, 34), rgb(47, 47, 116));
     margin: 5px 0;
     transition: all 0.3s ease;
 }
