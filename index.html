@@ -1,277 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rahman Portofolio's</title>
-
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-
-    <!-- AOS2 -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- awesome 6 cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Sedang Dalam Perbaikan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    /* Mengatur font dan margin */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+/* Container utama */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Box pesan */
+.message-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    color: #ff6f61;
+    font-size: 2.5rem;
+}
+
+/* Paragraf */
+p {
+    font-size: 1.2rem;
+    color: #333;
+}
+</style>
 <body>
-    <header>
-        <!-- Navigation -->
-        <div class="main-container">
-            <div class="nav">
-                <div class="logo">
-                    <a href="index.html#home">rahman</a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#keahlian"><i class="fas fa-cogs"></i> Keahlian</a></li>
-                        <li><a href="#portfolios"><i class="fas fa-briefcase"></i> portfolios</a></li>
-                        <li><a href="#skills"><i class="fas fa-chart-bar"></i> Skills</a></li>
-                        <li><a href="gallery.html#gallery"><i class="fas fa-images"></i> Gallery</a></li>
-                        <li><a href="contact.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="burger">
-                    <div class="line-1"></div>
-                    <div class="line-2"></div>
-                    <div class="line-3"></div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="message-box">
+            <h1>Halaman Ini Sedang Dalam Perbaikan</h1>
+            <p>Mohon maaf, halaman yang Anda tuju sedang dalam perbaikan. Kami akan segera memperbaikinya.</p>
+            <p>Terima kasih atas pengertiannya.</p>
         </div>
-    </header>
-
-    <main>
-        <!-- Start Home -->
-        <div class="home main-container">
-            <section id="home">
-                <div class="home-left" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
-                    <h3 class="pre-title">Hai My Name Is</h3>
-                    <h1 id="dynamic-text" class="home-name">Rahman <span>Badio</span></h1>
-                    <p>Saya seorang mahasiswa dan masih junior dalam pengembangan perangkat lunak. Saya sangat tertarik
-                        dengan pemrograman dan pengembangan aplikasi Website. Selain itu, saya juga menikmati belajar
-                        berbagai bahasa pemrograman. Saat ini, saya fokus pada pengembangan aplikasi menggunakan Laravel
-                        dan teknologi web lainnya. Saya percaya bahwa teknologi dapat memberikan solusi yang efektif
-                        untuk berbagai masalah yang ada di masyarakat!</p>
-                </div>
-                <div class="home-right" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
-                    <img src="assets/img/foto-self.png" alt="rahman" />
-                </div>
-            </section>
-        </div>
-        <!-- End Home -->
-
-        <!-- start services -->
-        <section id="keahlian">
-            <div class="services main-container">
-                <h3 class="pre-title">What I Do</h3>
-                <h1 class="section-title services-title">Keahlian</h1>
-
-                <div class="grid-3">
-                    <!-- services 1 -->
-                    <div class="service" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
-                        <div class="service-icon">
-                            <i class="fab fa-linux"></i>
-                        </div>
-                        <h4>Linux Server</h4>
-                        <p>
-                            Expert in configuring and managing Linux-based servers to ensure robust and secure
-                            performance.
-                        </p>
-                    </div>
-                    <!-- services 2 -->
-                    <div class="service" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1200">
-                        <div class="service-icon">
-                            <i class="fas fa-desktop"></i>
-                        </div>
-                        <h4>Web Development</h4>
-                        <p>
-                            Building responsive, user-friendly, and feature-rich websites using modern technologies.
-                        </p>
-                    </div>
-                    <!-- services 3 -->
-                    <div class="service" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1400">
-                        <div class="service-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <h4>Networking</h4>
-                        <p>
-                            Designing and implementing reliable and scalable network solutions to meet diverse needs.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end services -->
-
-        <!-- start portofolio -->
-        <section id="portfolios">
-            <div class="portfolios main-container">
-                <h3 class="pre-title">Desain Latihan</h3>
-                <h1 class="section-title">Portfolio</h1>
-
-                <div class="grid-3">
-                    <div class="portfolio" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="portfolio-cover">
-                            <img src="https://picsum.photos/300/200?random=1" alt="Agency Website">
-                        </div>
-                        <div class="portfolio-info">
-                            <h4 class="portfolio-title">Agency Website</h4>
-                            <div class="portfolio-tags">
-                                <span>Laravel</span>
-                                <span>Tailwind</span>
-                            </div>
-                            <p>Built a responsive and modern website for a digital agency using Laravel and Tailwind
-                                CSS.</p>
-                            <a href="#" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i> View Project
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio" data-aos="fade-up" data-aos-duration="1200">
-                        <div class="portfolio-cover">
-                            <img src="https://picsum.photos/300/200?random=2" alt="E-commerce">
-                        </div>
-                        <div class="portfolio-info">
-                            <h4 class="portfolio-title">E-commerce Website</h4>
-                            <div class="portfolio-tags">
-                                <span>Python</span>
-                                <span>Flask</span>
-                            </div>
-                            <p>Developed a secure and scalable e-commerce platform using Flask and PostgreSQL.</p>
-                            <a href="#" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i> View Project
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio" data-aos="fade-up" data-aos-duration="1400">
-                        <div class="portfolio-cover">
-                            <img src="https://picsum.photos/300/200?random=3" alt="Networking">
-                        </div>
-                        <div class="portfolio-info">
-                            <h4 class="portfolio-title">Networking Solution</h4>
-                            <div class="portfolio-tags">
-                                <span>Cisco</span>
-                                <span>Packet Tracer</span>
-                            </div>
-                            <p>Designed and simulated a robust network infrastructure using Cisco Packet Tracer.</p>
-                            <a href="#" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i> View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end portofolio -->
-
-        <!-- skills start -->
-        <section id="skills" class="skills-section">
-            <div class="skills main-container">
-                <h3 class="pre-title">Learning Path</h3>
-                <h1 class="section-title">Skills & Educations</h1>
-
-                <div class="skills-grid">
-                    <!-- Left: Education Timeline -->
-                    <div class="skills-left" data-aos="fade-right" data-aos-duration="1200">
-                        <!-- Timeline Item -->
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h4>SMKN 3 Bengkulu</h4>
-                                <p>Teknik Komputer Jaringan dan Telekomunikasi</p>
-                                <span class="timeline-year">2023</span>
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h4>PT Indonesia Comnets Plus</h4>
-                                <p>Teknisi Jaringan</p>
-                                <span class="timeline-year">2022</span>
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h4>Universitas Muhammadiyah Bengkulu</h4>
-                                <p>Teknik Informatika</p>
-                                <span class="timeline-year">Sedang Berlangsung</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right: Skills Overview -->
-                    <div class="skills-right" data-aos="fade-left" data-aos-duration="1200">
-                        <div class="skills-summary">
-                            <p>
-                                Saya seorang mahasiswa yang antusias dalam bidang teknologi dan informasi.
-                                Saya terus mempelajari berbagai keterampilan yang relevan, termasuk pengembangan
-                                perangkat lunak dan jaringan.
-                                Saya selalu berusaha untuk memperdalam pengetahuan tentang bahasa pemrograman modern dan
-                                alat bantu teknologi.
-                            </p>
-                        </div>
-                        <div class="skills-list">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>Python</li>
-                                <li>PHP</li>
-                                <li>Laravel</li>
-                                <li>Linux</li>
-                                <li>Cisco Packet Tracer</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- skills end -->
-    </main>
-
-    <footer class="footer-section">
-        <div class="footer-container">
-            <div class="footer-icons">
-                <a href="https://github.com/username" target="_blank">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.instagram.com/username/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://www.linkedin.com/in/username/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://www.facebook.com/username" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                    <span>Facebook</span>
-                </a>
-            </div>
-            <p class="footer-text">
-                &#169; 2025 - Design by <strong>Rahman</strong>. All rights reserved.
-            </p>
-        </div>
-    </footer>
-
-    <!-- AOS 2 -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Inisialisasi AOS setelah library dimuat
-        AOS.init();
-    </script>
-    <script src="assets/js/main.js"></script>
-
+    </div>
 </body>
-
 </html>
