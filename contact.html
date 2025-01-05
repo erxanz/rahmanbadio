@@ -8,6 +8,7 @@
     <title>Contact</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <!-- awesome 6 cdn -->
@@ -28,8 +29,8 @@
                         <li><a href="index.html#services"><i class="fas fa-cogs"></i> Services</a></li>
                         <li><a href="index.html#portofolios"><i class="fas fa-briefcase"></i> Portofolio</a></li>
                         <li><a href="index.html#skills"><i class="fas fa-chart-bar"></i> Skills</a></li>
-                        <li><a href="artikel.html#artikel"><i class="fas fa-book"></i> Artikel</a></li>
-                        <li><a href="contact.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="gallery.html#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
                     </ul>
                 </nav>
                 <div class="burger">
@@ -40,80 +41,120 @@
             </div>
         </div>
     </header>
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-form-section">
+                <h2>Hubungi Kami</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis minima consectetur totam molestias nulla, provident quod ea, iure iusto culpa! Eveniet numquam cumque cupiditate.</p>
+                <form id="contactForm" action="https://formspree.io/f/xrbzzwkb" method="post">
+                    <div class="form-group">
+                        <label for="name">Nama*</label>
+                        <input type="text" name="name" id="name" placeholder="Masukkan Nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" placeholder="Masukkan Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan*</label>
+                        <textarea name="message" id="message" rows="5" placeholder="Masukkan Pesan" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Kirim Pesan</button>
+                    </div>
+                </form>
+            </div>
 
-    <main>
-        <!-- start Contact -->
-        <section id="contact">
-            <div class="contact main-container">
-                <div class="contact-left">
-                    <form action="https://formspree.io/f/xrbzzwkb" method="post" class="contact-form">
-                        <div>
-                            <input type="text" name="name" id="name" placeholder="Name" />
-                        </div>
-                        <div>
-                            <input type="email" name="email" id="email" placeholder="Email" />
-                        </div>
-                        <div>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn-submit">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
+            <div class="contact-info-section">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Kantor Kami</h4>
+                    <p>Bengkulu, Kota Bengkulu</p>
                 </div>
-                <div class="contact-right">
-                    <!-- Alamat -->
-                    <div class="contact-item">
-                        <div class="contact-item-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-item-detail">
-                            <h4>Address</h4>
-                            <p>Bengkulu, Kota Bengkulu</p>
-                        </div>
-                    </div>
-                    <!-- Phone -->
-                    <div class="contact-item">
-                        <div class="contact-item-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-item-detail">
-                            <h4>Phone</h4>
-                            <p>+62895410070xxx</p>
-                        </div>
-                    </div>
-                    <!-- Email -->
-                    <div class="contact-item">
-                        <div class="contact-item-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-item-detail">
-                            <h4>Email</h4>
-                            <p>badiobkl@gmail.com</p>
-                        </div>
-                    </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Hubungi Kami</h4>
+                    <p>+62 895 4100 70xxx</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email Kami</h4>
+                    <p>badiobkl@gmail.com</p>
                 </div>
             </div>
-        </section>
-        <!-- end Contact -->
-    </main>
-
-    <footer>
-        <div class="footer-icons">
-            <a href="https://github.com/username" target="_blank"><i class="fab fa-github text-putih"></i> GitHub</a>
-            <a href="https://www.instagram.com/username/" target="_blank"><i class="fab fa-instagram text-putih"></i>
-                Instagram</a>
-            <a href="https://www.linkedin.com/in/username/" target="_blank"><i class="fab fa-linkedin text-putih"></i>
-                LinkedIn</a>
-            <a href="https://www.facebook.com/username" target="_blank"><i class="fab fa-facebook text-putih"></i>
-                Facebook</a>
         </div>
-        <p>&#169; 2025 - Design by Rahman</p>
-    </footer>
+    </section>
 
-    <script src="assets/js/main.js"></script>
+
+
+
+
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-icons">
+                <a href="https://github.com/username" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.instagram.com/username/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/in/username/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://www.facebook.com/username" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+            </div>
+            <p class="footer-text">
+                &#169; 2025 - Design by <strong>Rahman</strong>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+        const form = document.getElementById('contactForm');
+
+        form.addEventListener('submit', function (event) {
+            let isValid = true;
+
+            // Validasi Nama (hanya huruf dan spasi)
+            const nameInput = document.getElementById('name');
+            const nameValue = nameInput.value.trim();
+            if (!/^[a-zA-Z\s]+$/.test(nameValue) || nameValue === "") {
+                alert("Nama harus diisi dan hanya boleh berisi huruf dan spasi.");
+                nameInput.focus();
+                isValid = false;
+            }
+
+            // Validasi Email
+            const emailInput = document.getElementById('email');
+            const emailValue = emailInput.value.trim();
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
+                alert("Format email tidak valid.");
+                emailInput.focus();
+                isValid = false;
+            }
+
+            // Validasi Pesan (tidak boleh kosong)
+            const messageInput = document.getElementById('message');
+            if (messageInput.value.trim() === "") {
+                alert("Pesan tidak boleh kosong.");
+                messageInput.focus();
+                isValid = false;
+            }
+
+            if (!isValid) {
+                event.preventDefault(); // Mencegah pengiriman form jika tidak valid
+            } else {
+                alert("Pesan Anda telah terkirim!"); // Pesan sukses (bisa diganti dengan tampilan yang lebih baik)
+                form.reset(); // Reset form setelah sukses
+            }
+        });
+    </script>
 
 </body>
 
