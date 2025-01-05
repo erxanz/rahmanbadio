@@ -141,7 +141,7 @@ body {
         right: 20px;
         z-index: 10;
         background-color: #fff;
-        border-radius: 50%;
+        border-radius: 10px;
     }
 
     .burger div {
