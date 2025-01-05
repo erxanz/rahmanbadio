@@ -48,7 +48,8 @@
         <div class="contact-container">
             <div class="contact-form-section">
                 <h2>Hubungi Saya</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis minima consectetur totam molestias nulla, provident quod ea, iure iusto culpa! Eveniet numquam cumque cupiditate.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis minima consectetur totam
+                    molestias nulla, provident quod ea, iure iusto culpa! Eveniet numquam cumque cupiditate.</p>
                 <form id="contactForm" action="https://formspree.io/f/xrbzzwkb" method="post">
                     <div class="form-group">
                         <label for="name">Nama*</label>
@@ -113,62 +114,8 @@
             </p>
         </div>
     </footer>
-    <script>
-        const form = document.getElementById('contactForm');
 
-        form.addEventListener('submit', function (event) {
-            let isValid = true;
-
-            // Validasi Nama (hanya huruf dan spasi)
-            const nameInput = document.getElementById('name');
-            const nameValue = nameInput.value.trim();
-            if (!/^[a-zA-Z\s]+$/.test(nameValue) || nameValue === "") {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Nama harus diisi dan hanya boleh berisi huruf dan spasi.'
-                });
-                nameInput.focus();
-                isValid = false;
-            }
-
-            // Validasi Email
-            const emailInput = document.getElementById('email');
-            const emailValue = emailInput.value.trim();
-            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue)) {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Format email tidak valid.'
-                });
-                emailInput.focus();
-                isValid = false;
-            }
-
-            // Validasi Pesan (tidak boleh kosong)
-            const messageInput = document.getElementById('message');
-            if (messageInput.value.trim() === "") {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Pesan tidak boleh kosong.'
-                });
-                messageInput.focus();
-                isValid = false;
-            }
-
-            if (!isValid) {
-                event.preventDefault(); // Mencegah pengiriman form jika tidak valid
-            } else {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Berhasil!',
-                    text: 'Pesan Anda telah terkirim!'
-                });
-                form.reset(); // Reset form setelah sukses
-            }
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 

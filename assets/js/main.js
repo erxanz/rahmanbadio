@@ -43,6 +43,50 @@ document.addEventListener("DOMContentLoaded", () => {
     typeWriter(); // Mulai animasi penulisan
 });
 
+// Gallery
+const gallery = document.querySelector(".gallery");
+const galleryItems = document.querySelectorAll(".gallery-item");
+let draggedItem = null;
+
+galleryItems.forEach((item) => {
+    item.addEventListener("dragstart", () => {
+        draggedItem = item;
+        setTimeout(() => item.classList.add("dragging"), 0); // Delay sedikit untuk transisi
+    });
+
+    item.addEventListener("dragend", () => {
+        draggedItem = null;
+        item.classList.remove("dragging");
+    });
+
+    item.addEventListener("dragover", (e) => {
+        e.preventDefault();
+    });
+
+    item.addEventListener("dragenter", function (e) {
+        e.preventDefault();
+        this.classList.add("hovered");
+    });
+
+    item.addEventListener("dragleave", function (e) {
+        this.classList.remove("hovered");
+    });
+
+    item.addEventListener("drop", (e) => {
+        e.preventDefault();
+        if (item !== draggedItem) {
+            let draggedItemIndex = Array.from(gallery.children).indexOf(draggedItem);
+            let itemIndex = Array.from(gallery.children).indexOf(item);
+            gallery.insertBefore(
+                draggedItem,
+                itemIndex > draggedItemIndex ? item.nextSibling : item
+            );
+        }
+        item.classList.remove("hovered");
+    });
+});
+
+// Contact
 const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", function (event) {
