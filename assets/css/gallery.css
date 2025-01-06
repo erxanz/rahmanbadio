@@ -4,6 +4,10 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
     padding: 20px;
+    background: linear-gradient(to bottom right, #2c3e50, #1e5221);
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .gallery-item {
