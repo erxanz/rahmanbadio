@@ -286,6 +286,13 @@ header:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.keahlian-section {
+    background: linear-gradient(to bottom right, #2c3e50, #ebebeb);
+    padding: 110px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
 .keahlian .pre-title {
     color: #2c3e50;
     text-transform: uppercase;
