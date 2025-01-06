@@ -84,18 +84,8 @@ a {
     position: relative;
     padding-left: 40px;
     width: fit-content;
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
-.pre-title::before {
-    content: "";
-    width: 30px;
-    height: 1px;
-    background-color: #580000;
-    display: block;
-    left: 0;
-    top: 50%;
+    font-weight: 600;
+    font-size: 1rem;
 }
 /* END GLOBAL */
 
