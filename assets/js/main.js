@@ -178,40 +178,40 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-// Menonaktifkan klik kanan di seluruh halaman
-document.addEventListener('contextmenu', function (event) {
-    event.preventDefault();
-});
+// // Menonaktifkan klik kanan di seluruh halaman
+// document.addEventListener('contextmenu', function (event) {
+//     event.preventDefault();
+// });
 
-let devToolsOpen = false;
-const originalWidth = window.innerWidth;
-const originalHeight = window.innerHeight;
+// let devToolsOpen = false;
+// const originalWidth = window.innerWidth;
+// const originalHeight = window.innerHeight;
 
-window.addEventListener("resize", () => {
-    const widthDiff = Math.abs(window.innerWidth - originalWidth);
-    const heightDiff = Math.abs(window.innerHeight - originalHeight);
+// window.addEventListener("resize", () => {
+//     const widthDiff = Math.abs(window.innerWidth - originalWidth);
+//     const heightDiff = Math.abs(window.innerHeight - originalHeight);
 
-    // Ambang batas perubahan ukuran (sesuaikan sesuai kebutuhan)
-    const threshold = 160; // Nilai ini bisa berbeda di browser dan sistem operasi yang berbeda
+//     // Ambang batas perubahan ukuran (sesuaikan sesuai kebutuhan)
+//     const threshold = 160; // Nilai ini bisa berbeda di browser dan sistem operasi yang berbeda
 
-    if (widthDiff > threshold || heightDiff > threshold) {
-        if (!devToolsOpen) {
-            console.log("Developer Tools kemungkinan dibuka.");
-            devToolsOpen = true;
+//     if (widthDiff > threshold || heightDiff > threshold) {
+//         if (!devToolsOpen) {
+//             console.log("Developer Tools kemungkinan dibuka.");
+//             devToolsOpen = true;
 
-            // Tampilkan SweetAlert dan beri peringatan
-            Swal.fire({
-                title: "Developer Tools Ditemukan!",
-                text: "Bang Udah Bang Jangan Hack Lagi! 😁",
-                icon: "warning",
-                confirmButtonText: "Oke",
-            }).then(() => {
-                // Setelah pengguna mengklik "Oke", arahkan ke Google.com
-                window.location.href = "https://www.google.com"; // Arahkan ke Google setelah peringatan
-            });
-        }
-    } else if (devToolsOpen) {
-        console.log("Developer Tools kemungkinan ditutup.");
-        devToolsOpen = false;
-    }
-});
+//             // Tampilkan SweetAlert dan beri peringatan
+//             Swal.fire({
+//                 title: "Developer Tools Ditemukan!",
+//                 text: "Bang Udah Bang Jangan Hack Lagi! 😁",
+//                 icon: "warning",
+//                 confirmButtonText: "Oke",
+//             }).then(() => {
+//                 // Setelah pengguna mengklik "Oke", arahkan ke Google.com
+//                 window.location.href = "https://www.google.com"; // Arahkan ke Google setelah peringatan
+//             });
+//         }
+//     } else if (devToolsOpen) {
+//         console.log("Developer Tools kemungkinan ditutup.");
+//         devToolsOpen = false;
+//     }
+// });
